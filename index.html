@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form>
+        <label for="inpText">Renseignez votre nom et prénom</label>
+        <br> <br>
+        <input id="inpText" type="text">  
+        <br> <br>
+        <textarea cols="30" rows="10"></textarea>
+        <br> <br>
+        <select >
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="portugal">Portugal</option>
+            <option value="france">France</option>
+                <optgroup label="villes de france"></optgroup>
+                    <option value="paris">Paris</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="dijon">Dijon</option>
+        </select>
+        <br><br>
+
+        <label for="villes">Quelle est votre destination préférée</label>
+        <br>
+        <input id="villes" type="text" list="suggestions">
+        <datalist id="suggestions">
+            <option value="rome"></option>
+            <option value="madrid"></option>
+            <option value="lisbone"></option>
+            
+        </datalist>
+
+        <br><br>
+
+        <label for="satisfait"> Etes vous satisfait de notre site?</label>
+            <input type="checkbox" id="satisafit" name="satisfait" value="satisfait">
+
+        <br> <br>
+
+        <p>Votre plat préféré ?</p>
+
+        <label for="pizza">Pizza</label>
+        <input type="radio" id="pizza" name="plat" value="pizza">
+
+        <label for="burger">Burger</label>
+        <input type="radio" id="burger" name="plat" value="burger">
+
+        <label for="tacos">Tacos</label>
+        <input type="radio" id="tacos" name="plat" value="tacos">
+
+        <label for="tajine">Tajine</label>
+        <input type="radio" id="tajine" name="plat" value="tajine">
+
+        <label for="frites">Frites</label>
+        <input type="radio" id="frites" name="plat" value="frites">
+
+        <br><br>
+
+
+        <button>Envoyer</button>
+       
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+    <script src="index.js"></script> 
+</body>
+</html>
